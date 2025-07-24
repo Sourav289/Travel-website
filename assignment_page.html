@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><style>
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, rgb(255, 255, 255) 50%, rgb(249, 249, 249) 50%) 0% 0% / 20px 20px;
+}
+aside {
+width:40%;
+padding-left:10px;
+margin-left:30px;
+float:right;
+font-style:italic;
+background-color:aqua;
+}
+
+section{
+    padding-left: 31%;
+    padding-right: 1%;
+    font-size: 20px;
+    background: url(images/content-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.Places{
+    padding-left: 0;
+    padding-right:0;
+    font-size: 20px;
+    background: url(images/bg-place.jpg);
+    background-size: contain;
+    text-align: center;
+    padding-bottom: 2%;  
+}
+section h1{
+    margin: 0;
+}
+.down {
+padding:10px;
+}
+
+details {
+padding:5px;
+width:200px;
+background-color:grey;
+border:none;
+box-shadow:1px 1px 2px black;
+cursor:circle;
+float:left;
+font-size: 16px;
+background: url(images/bg.jpg);
+}
+footer{
+    background: url(images/bg.jpg);
+}
+</style>
+<style>
+    .slider {
+        width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .slides {
+        display: flex;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Keyframe animation */
+    @keyframes sliderAnimation {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-500%); }
+    }
+
+    /* Apply animation to slides */
+    .slides {
+        animation: sliderAnimation 30s infinite;
+    }
+    #home-sec {
+    background: url(images/1.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 190px;
+    min-height: 350px;
+    color: #fff;
+}
+.magaluru_style{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;   
+}
+footer p{
+    display: inline-block;
+    width: 80%;
+}
+.post-slide{
+     padding: 0;
+ border: 10px solid #e6e6fa;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    margin: 0 auto;
+}
+.post-slide .post-img{
+    overflow: hidden;
+}
+.post-slide .post-img img{
+   width: 100%;
+    height: 300px;
+    opacity: 0.9;
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out 0s;
+}
+.post-slide:hover .post-img img{
+    transform: scale(1.2,1.2);
+    filter:none;
+    opacity:1;
+}
+.post-slide .post-content{
+    padding: 0 30px;
+    position: relative;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.post-slide .post-date{
+    min-width:240px;
+    min-height:28px;
+    line-height: 28px;
+    text-align: center;
+    background: #e6e6fa;
+   
+}
+.post-slide .month{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    background: #800080;
+    text-transform: uppercase;
+    background: url(bg.jpg);
+    box-shadow: 0px 0px 30px -10px #000000;
+    background: linear-gradient(to right, #F37A21, #F5B259 20px, #F5B259 13px, #F37A21 38px, #F37A21 40%, #F8931F 60%);
+}
+.post-title{
+    margin-top: 30px;
+}
+.post-slide .date{
+   color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.post-slide .post-title{
+    margin:18px 0;
+}
+.post-slide .post-description{
+    color: #000;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    line-height: 22px;
+    /* line-height: 1.2; */
+}
+.post-slide .post-bar{
+      padding: 8px 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      background: #800080;
+      margin-bottom: 0;
+      box-shadow: 0px 0px 30px -10px #000000;
+      background: linear-gradient(to right, #F37A21, #F5B259 20px, #F5B259 13px, #F37A21 38px, #F37A21 40%, #F8931F 60%);
+}
+.post-slide .post-bar a{
+    display: inline-block;
+    margin-right: 5px;
+        font-family: 'Playball', cursive;
+    color: #fff;
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+<main>
+<h1 align="center">TOP PLACES TO VISIT IN MANGLORE
+<details>
+<h2>Places</h2>
+<p>Panambur Beach</p>
+<p>Sultan Battery</p>
+<p>Pilikula Nisarga Dhama</p>
+<p>Kudroli Temple</p>
+<p>Tannirbavi Beach</p>
+</details>
+</h1>
+<hr noshade="20px">
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/slide1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="images/slide2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="images/slide3.jpg" alt="Image 3">
+        </div>
+        
+        <div class="slide">
+            <img src="images/slide5.jpg" alt="Image 4">
+        </div>
+        <div class="slide">
+            <img src="images/slide6.jpg" alt="Image 4">
+        </div>
+        <div class="slide">
+            <img src="images/slide4.jpg" alt="Image 4">
+        </div>
+    </div>
+</div>
+<section style="font-size: 13px;">
+    <h1>Mangalore: A Cultural and Coastal Gem</h1>
+
+    Nestled along the pristine shores of the Arabian Sea, Mangalore, also known as Mangaluru, stands as a testament to the rich tapestry of culture, history, and natural beauty that graces the Indian subcontinent. Situated in the southwestern state of Karnataka, this vibrant city is renowned for its picturesque beaches, historical landmarks, and diverse culinary delights.
+    <h4>Historical Heritage:</h4>
+    The history of Mangalore dates back centuries, with evidence of human habitation found in the region dating as far back as the 3rd century BCE. Over the ages, Mangalore has been influenced by various dynasties and cultures, including the Kadambas, Chalukyas, Vijayanagara Empire, Portuguese, and British. Each period has left its mark on the city, evident in its architecture, traditions, and way of life.
+        <h4>Cultural Melting Pot:</h4>
+    One of the most striking features of Mangalore is its cultural diversity. The city is a melting pot of different communities, languages, and traditions. Tulu, Konkani, Kannada, and Beary are among the languages spoken here, reflecting the mosaic of cultures that coexist harmoniously. Festivals such as Navaratri, Diwali, and Christmas are celebrated with great fervor, bringing people of all backgrounds together in joyous celebration.
+      <h4>Breathtaking Beaches:</h4>
+    Mangalore is blessed with a coastline that stretches for miles, adorned with some of the most breathtaking beaches in India. From the vibrant shores of Panambur Beach to the tranquil beauty of Tannirbavi Beach, each stretch of sand offers a unique experience. Visitors flock to these sandy havens to soak up the sun, swim in the azure waters, and indulge in thrilling water sports.
+    <h4>Spiritual Sanctuaries:</h4>
+    For those seeking solace and spirituality, Mangalore is home to a plethora of sacred sites and religious landmarks. The centuries-old Kadri Manjunath Temple, dedicated to Lord Shiva, and the majestic Mangaladevi Temple, after which the city is named, are revered by devotees and tourists alike. St. Aloysius Chapel, with its exquisite frescoes and ornate interiors, is another architectural marvel that attracts visitors from far and wide.
+    <h4>Culinary Delights:</h4>
+    No visit to Mangalore is complete without sampling its delectable cuisine. Known for its seafood delicacies, spicy curries, and aromatic spices, Mangalorean cuisine is a gastronomic delight. From the iconic Mangalorean fish curry to the mouthwatering neer dosa, the city offers a culinary adventure that tantalizes the taste buds and leaves a lasting impression.
+    <h4> Economic Hub:</h4>
+    In addition to its cultural and natural attractions, Mangalore is also an economic powerhouse in the region. The New Mangalore Port, one of the major ports in India, serves as a vital lifeline for trade and commerce, facilitating the import and export of goods. The city's thriving industries, including petrochemicals, banking, and information technology, contribute to its robust economy and growth.    
+</section>
+<!--inserting figure-->
+<div id="home-sec">
+    <div class="container">
+      <div class="row text-center">
+        <div class="magaluru_style">NAMMA MANGALURU
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+<!--creating an article-->
+<section class="Places">
+<div class="post-slide">
+    <div class="post-img">
+      <a href="#" ><img src="images/panambur.jpg" alt=""></a>
+    </div>
+    <div class="post-content">
+        <div class="post-date">
+            <span class="month">Panambur Beach</span>
+            <span class="date">01</span>
+        </div>
+       
+        <p class="post-description">
+            The Panambur Beach has beautiful,mesmerizing sunset.This beach is on the shores of Arabian sea and is credited as one of the safest and best maintained beaches of India. It is the most popular, well connected and the most visited beach of Karnataka
+        </p>
+    </div>
+    <h5 class="post-bar"><a href="https://en.wikipedia.org/wiki/Panambur_Beach" target="_blank">View More</a></h5>
+</div>
+<hr noshade="20px" color="red">
+<div class="post-slide" >
+    <div class="post-img">
+      <a href="#" ><img src="images/sultan.JPG" alt=""></a>
+    </div>
+    <div class="post-content">
+        <div class="post-date">
+            <span class="month">Sultan Battery</span>
+            <span class="date">02</span>
+        </div>
+       
+        <p class="post-description">
+            This watch tower constructed in the era of the emperor Tipu Sultan such that now the area surrounding the decaying structure is its namesake. The watch tower was constructed 15 years before his death in 1784 A.D. The place was previously known as Sultan's Battery        </p>
+    </div>
+    <h5 class="post-bar"><a href="https://en.wikipedia.org/wiki/Sultan_Battery_(Mangalore)" target="_blank">View More</a></h5>
+</div>
+
+<hr noshade="20px" color="red">
+
+
+<div class="post-slide" >
+    <div class="post-img">
+      <a href="#" ><img src="images/pilikula.jpg" alt=""></a>
+    </div>
+    <div class="post-content">
+        <div class="post-date">
+            <span class="month">Pilikula NisargaDhama</span>
+            <span class="date">03</span>
+        </div>
+       
+        <p class="post-description">
+            The Park where kids would enjoy and understand more about wildlife and natureAn integrated theme park with a wide variety of features, Pilikula has many attractions of cultural, educational and scientific interest. The park is spread over an area of 370 acres comprising of a tropical forest and the enchanting Pilikula Lake. The project presently includes a Biological Park, Arboretum, a Science Centre, a Lake Park with Boating Centre, a Water Amusement Park and a Golf Course. Other features which are currently being developed include a Heritage Village, an Ayurveda Health Therapy Centre and Tourist Cottages    </div>
+    <h5 class="post-bar"><a href="https://en.wikipedia.org/wiki/Pilikula_Nisargadhama" target="_blank">View More</a></h5>
+</div>
+<hr noshade="20px" color="red">
+
+<div class="post-slide" >
+    <div class="post-img">
+      <a href="#" ><img src="images/kudroli.jpg" alt=""></a>
+    </div>
+    <div class="post-content">
+        <div class="post-date">
+            <span class="month">Kudroli Temple</span>
+            <span class="date">04</span>
+        </div>
+       
+        <p class="post-description">
+            The Gokarnanatheshwara Temple, otherwise known as Kudroli Sri Gokarnanatha Kshetra, is in the Kudroli area of Mangalore in Karnataka, India. It was consecrated by Narayana Guru. It is dedicated to Gokarnanatha, a form of Lord Shiva. This temple was built in 1912 by Adhyaksha HoigeBazar Koragappa.   </div>
+    <h5 class="post-bar"><a href="https://en.wikipedia.org/wiki/Gokarnanatheshwara_Temple" target="_blank">View More</a></h5>
+</div>
+<hr noshade="20px" color="red">
+
+<div class="post-slide" >
+    <div class="post-img">
+      <a href="#" ><img src="images/beach.jpg" alt=""></a>
+    </div>
+    <div class="post-content">
+        <div class="post-date">
+            <span class="month">Tannirbhavi Beach</span>
+            <span class="date">05</span>
+        </div>
+       
+        <p class="post-description">
+            Tannirbhavi beach is a beach in Mangalore, Karnataka, India. It is one of the most popular tourist destinations in coastal Karnataka. Along with the beach, Sultan Battery, Tannirbavi Tree Park & the proposed Marine museum are also the tourist attractions. It can be reached either by land near Kuloor Bridge or by ferry via Gurupura river from Sultan Battery   </div>
+    <h5 class="post-bar"><a href="https://en.wikipedia.org/wiki/Tannirbhavi_Beach" target="_blank">View More</a></h5>
+</div>
+<hr noshade="20px" color="red">
+
+</section>
+<hr>
+<footer class="down">
+<p><b>Author:Sourav V</b></p>
+<a href="mailto:souravsep282005@gmail.com" style="color: #000;">Contact me here</a>
+</footer>
+</main>
+</body>
+</html>
