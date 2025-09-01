@@ -15,3 +15,4 @@ This project combines HTML and CSS to create a responsive and engaging travel pa
 * Convert image slider into a fully functional JavaScript carousel
 * Include interactive maps or embedded YouTube videos
 * Add contact or feedback form
+images are copyrighted 
