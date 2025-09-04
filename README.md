@@ -16,3 +16,6 @@ This project combines HTML and CSS to create a responsive and engaging travel pa
 * Include interactive maps or embedded YouTube videos
 * Add contact or feedback form
 images are copyrighted 
+
+Extra features for a travel website include an integrated booking and payment system,
+itinerary planning tools, interactive maps, user reviews, virtual tours, AI chatbots, and personalization features
